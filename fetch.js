@@ -8,11 +8,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                 <td>${user.name}</td>
                                 <td>${user.username}</td>
                                 <td>${user.email}</td>
-                                <td>${user.address.street}</td>
+                                <td>${user.address.city}</td>
                                 <td>${user.phone}</td>
                                 <td>${user.website}</td>
                                 <td>${user.company.name}</td>`;
-				tableBody.appendChild(row);
+				tableBody.append(row);
 			});
 		})
 		.catch(error => console.error(error));
